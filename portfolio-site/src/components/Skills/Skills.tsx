@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import SkillAvatar from "./SkillAvatar";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
-import { SkillAvatarProps } from "../../types";
+import { SkillAvatarProps, spotifyGreen } from "../../types";
 import PythonLogo from "../../images/python-logo.png";
 import TensorFlowLogo from "../../images/tensorflow-logo.png";
 import TypeScriptLogo from "../../images/typescript-logo.png";
@@ -115,7 +115,7 @@ const Skills: React.FC = () => {
                         <Button
                             endIcon={<ArrowRightAlt />}
                             color="primary"
-                            style={{ marginTop: 15 }}
+                            style={{ marginTop: 15, color: spotifyGreen }}
                         >
                             Read More
                         </Button>

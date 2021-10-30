@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "Gotham-Black";
+    src: local("Gotham-Black"),
+        url(../fonts/Gotham-Black.otf) format("opentype");
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                          'embedded-opentype', and 'svg' */
+}

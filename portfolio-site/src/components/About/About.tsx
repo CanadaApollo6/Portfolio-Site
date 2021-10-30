@@ -10,6 +10,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import { Link } from "react-scroll";
 import Button from "@material-ui/core/Button";
 import ArrowRightAlt from "@material-ui/icons/ArrowRightAlt";
+import "../../containers/HUD.css";
+import { spotifyBlack, spotifyGreen } from "../../types";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -30,6 +32,21 @@ const useStyles = makeStyles((theme: Theme) =>
         media: {
             height: "256px",
         },
+        numberHeaders: {
+            fontFamily: "Gotham-Black",
+            color: spotifyGreen,
+        },
+        titleText: {
+            fontFamily: "Gotham-Black",
+            color: spotifyBlack,
+        },
+        bodyText: {
+            fontFamily: "Gotham-Black",
+        },
+        readText: {
+            fontFamily: "Gotham-Black",
+            color: spotifyGreen,
+        },
     })
 );
 
@@ -39,7 +56,12 @@ const About: React.FC = () => {
         <section id="section2">
             <Container maxWidth="md">
                 <Box pt={9} textAlign="center">
-                    <Typography variant="h3" component="h2" gutterBottom={true}>
+                    <Typography
+                        variant="h3"
+                        component="h2"
+                        gutterBottom={true}
+                        className={classes.titleText}
+                    >
                         Some Background
                     </Typography>
                 </Box>
@@ -62,13 +84,18 @@ const About: React.FC = () => {
                         <Grid item xs={12} md={6}>
                             <Box display="flex" height="100%">
                                 <Box my="auto">
-                                    <Typography variant="h2" component="h3">
+                                    <Typography
+                                        variant="h2"
+                                        component="h3"
+                                        className={classes.numberHeaders}
+                                    >
                                         01
                                     </Typography>
                                     <Typography
                                         variant="h5"
                                         component="h2"
                                         gutterBottom={true}
+                                        className={classes.titleText}
                                     >
                                         University of Dayton
                                     </Typography>
@@ -76,6 +103,7 @@ const About: React.FC = () => {
                                         variant="body1"
                                         color="textSecondary"
                                         paragraph={true}
+                                        className={classes.bodyText}
                                     >
                                         I attended the University of Dayton from
                                         2016-2020, earning a 3.89 GPA while
@@ -115,13 +143,18 @@ const About: React.FC = () => {
                         >
                             <Box display="flex" height="100%">
                                 <Box my="auto">
-                                    <Typography variant="h2" component="h3">
+                                    <Typography
+                                        variant="h2"
+                                        component="h3"
+                                        className={classes.numberHeaders}
+                                    >
                                         02
                                     </Typography>
                                     <Typography
                                         variant="h5"
                                         component="h2"
                                         gutterBottom={true}
+                                        className={classes.titleText}
                                     >
                                         Smart Data - Intern
                                     </Typography>
@@ -129,6 +162,7 @@ const About: React.FC = () => {
                                         variant="body1"
                                         color="textSecondary"
                                         paragraph={true}
+                                        className={classes.bodyText}
                                     >
                                         From May of 2020 until August of that
                                         same year, I became a software developer
@@ -155,13 +189,18 @@ const About: React.FC = () => {
                         <Grid item xs={12} md={6}>
                             <Box display="flex" height="100%">
                                 <Box my="auto">
-                                    <Typography variant="h2" component="h3">
+                                    <Typography
+                                        variant="h2"
+                                        component="h3"
+                                        className={classes.numberHeaders}
+                                    >
                                         03
                                     </Typography>
                                     <Typography
                                         variant="h5"
                                         component="h2"
                                         gutterBottom={true}
+                                        className={classes.titleText}
                                     >
                                         Smart Data - Software Engineer
                                     </Typography>
@@ -169,6 +208,7 @@ const About: React.FC = () => {
                                         variant="body1"
                                         color="textSecondary"
                                         paragraph={true}
+                                        className={classes.bodyText}
                                     >
                                         After my internship ended, I accepted an
                                         offer in August of 2020 to remain at
@@ -183,8 +223,8 @@ const About: React.FC = () => {
                                         duration={1000}
                                     >
                                         <Button
-                                            color="primary"
                                             endIcon={<ArrowRightAlt />}
+                                            className={classes.readText}
                                         >
                                             Read more
                                         </Button>

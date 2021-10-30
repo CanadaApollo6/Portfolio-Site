@@ -2,7 +2,8 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-import { SkillAvatarProps } from "../../types";
+import { SkillAvatarProps, spotifyBlack } from "../../types";
+import "../../containers/HUD.css";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -16,6 +17,10 @@ const useStyles = makeStyles((theme: Theme) =>
             "&:hover": {
                 transform: "scale(1.2)",
             },
+        },
+        text: {
+            fontFamily: "Gotham-Black",
+            color: spotifyBlack,
         },
     })
 );
@@ -31,14 +36,14 @@ const SkillAvatar: React.FC<SkillAvatarProps> = ({ imageSrc, skillName }) => {
                 className={classes.avatar}
             /> */}
             <img src={imageSrc} className={classes.avatar} />
-            <Typography variant="h6" component="h4" gutterBottom={true}>
+            <Typography
+                variant="h6"
+                component="h4"
+                gutterBottom={true}
+                className={classes.text}
+            >
                 {skillName}
             </Typography>
-            <Typography
-                variant="body1"
-                color="primary"
-                component="span"
-            ></Typography>
         </div>
     );
 };
