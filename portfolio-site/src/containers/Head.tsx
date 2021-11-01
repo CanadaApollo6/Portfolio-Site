@@ -4,11 +4,11 @@ import Box from "@material-ui/core/Box";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import ArrowRightAltIcon from "@material-ui/icons/ArrowRightAlt";
-import Animation from "../Animations/Animation";
-import DevelopingAnimation from "../Animations/JSON/developing.json";
+import Animation from "../components/Animations/Animation";
+import DevelopingAnimation from "../components/Animations/JSON/developing.json";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "react-scroll";
-import "./head.css";
+import "./HUD.css";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import IconButton from "@material-ui/core/IconButton";
@@ -19,7 +19,7 @@ import {
     Theme,
     makeStyles,
 } from "@material-ui/core/styles";
-import { spotifyGreen, spotifyBlack } from "../../types";
+import { spotifyGreen, spotifyBlack } from "../types";
 
 const StyledBadge = withStyles((theme: Theme) =>
     createStyles({

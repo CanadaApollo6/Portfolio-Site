@@ -1,8 +1,8 @@
 import React from "react";
-import Head from "../components/Head/Head";
-import About from "../components/About/About";
-import Skills from "../components/Skills/Skills";
-import NavTabs from "../components/Nav/NavTabs";
+import Head from "./Head";
+import About from "./About";
+import Skills from "./Skills";
+import NavTabs from "../components/NavTabs";
 import "./HUD.css";
 
 const HUD: React.FC = () => {

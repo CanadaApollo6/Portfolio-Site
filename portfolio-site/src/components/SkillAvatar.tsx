@@ -1,9 +1,8 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import Avatar from "@material-ui/core/Avatar";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-import { SkillAvatarProps, spotifyBlack } from "../../types";
-import "../../containers/HUD.css";
+import { SkillAvatarProps, spotifyBlack } from "../types";
+import "../containers/HUD.css";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
