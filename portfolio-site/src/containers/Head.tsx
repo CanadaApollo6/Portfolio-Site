@@ -8,7 +8,7 @@ import Animation from "../components/Animations/Animation";
 import DevelopingAnimation from "../components/Animations/JSON/developing.json";
 import Grid from "@material-ui/core/Grid";
 import { Link } from "react-scroll";
-import "./HUD.css";
+import "./main.css";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import IconButton from "@material-ui/core/IconButton";
@@ -41,18 +41,21 @@ const useStyles = makeStyles(() =>
             fontFamily: "Gotham-Black",
             color: spotifyGreen,
         },
+        name: {
+            marginTop: 60,
+            fontFamily: "Agustina",
+            color: spotifyBlack,
+        },
+        gitHubIcon: {
+            color: spotifyBlack,
+        },
     })
 );
 
 const Head: React.FC = () => {
     const classes = useStyles();
     return (
-        <section
-            // style={{
-            //     height: "100vh",
-            // }}
-            id="section1"
-        >
+        <section id="section1">
             <Container maxWidth="md">
                 <Box
                     py={8}
@@ -72,11 +75,7 @@ const Head: React.FC = () => {
                     <Typography
                         variant="h2"
                         component="h2"
-                        style={{
-                            marginTop: 60,
-                            fontFamily: "Agustina",
-                            color: spotifyBlack,
-                        }}
+                        className={classes.name}
                     >
                         Riel St. Amand
                     </Typography>
@@ -98,7 +97,7 @@ const Head: React.FC = () => {
                         <IconButton>
                             <GitHubIcon
                                 fontSize="large"
-                                style={{ color: spotifyBlack }}
+                                className={classes.gitHubIcon}
                             />
                         </IconButton>
                     </a>
@@ -107,7 +106,7 @@ const Head: React.FC = () => {
                             <StyledBadge badgeContent="Work">
                                 <GitHubIcon
                                     fontSize="large"
-                                    style={{ color: spotifyBlack }}
+                                    className={classes.gitHubIcon}
                                 />
                             </StyledBadge>
                         </IconButton>
