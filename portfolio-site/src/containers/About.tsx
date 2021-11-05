@@ -9,7 +9,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import { Link } from "react-scroll";
 import Button from "@material-ui/core/Button";
 import ArrowRightAlt from "@material-ui/icons/ArrowRightAlt";
-import "./HUD.css";
+import "./main.css";
 import { spotifyBlack, spotifyGreen } from "../types";
 import FadeInSection from "../components/Animations/FadeInSection";
 

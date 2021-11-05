@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import { SkillAvatarProps, spotifyBlack } from "../types";
-import "../containers/HUD.css";
+import "../containers/main.css";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -28,13 +28,7 @@ const SkillAvatar: React.FC<SkillAvatarProps> = ({ imageSrc, skillName }) => {
     const classes = useStyles();
     return (
         <div>
-            {/* <Avatar
-                variant="square"
-                alt=""
-                src={imageSrc}
-                className={classes.avatar}
-            /> */}
-            <img src={imageSrc} className={classes.avatar} />
+            <img src={imageSrc} className={classes.avatar} alt="" />
             <Typography
                 variant="h6"
                 component="h4"

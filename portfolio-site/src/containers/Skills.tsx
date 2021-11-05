@@ -22,7 +22,7 @@ import FlutterLogo from "../images/flutter-logo.png";
 import Button from "@material-ui/core/Button";
 import ArrowRightAlt from "@material-ui/icons/ArrowRightAlt";
 import { Link } from "react-scroll";
-import "./HUD.css";
+import "./main.css";
 import FadeInSection from "../components/Animations/FadeInSection";
 
 const useStyles = makeStyles((theme: Theme) =>
