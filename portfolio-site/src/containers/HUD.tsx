@@ -2,8 +2,9 @@ import React from "react";
 import Head from "./Head";
 import About from "./About";
 import Skills from "./Skills";
-import NavTabs from "../components/NavTabs";
-import "./HUD.css";
+import NavTabsDesktop from "../components/Navigation/NavTabsDesktop";
+import "./main.css";
+import Hidden from "@material-ui/core/Hidden";
 
 const HUD: React.FC = () => {
     return (
@@ -13,7 +14,9 @@ const HUD: React.FC = () => {
                 fontFamily: "Gotham",
             }}
         >
-            <NavTabs />
+            <Hidden smDown>
+                <NavTabsDesktop />
+            </Hidden>
             <Head />
             <About />
             <Skills />
