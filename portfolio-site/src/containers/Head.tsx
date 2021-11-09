@@ -20,6 +20,13 @@ import {
     makeStyles,
 } from "@material-ui/core/styles";
 import { spotifyGreen, spotifyBlack } from "../types";
+import {
+    name,
+    intro,
+    linkedInUrl,
+    gitHubUrl,
+    gitHubUrlWork,
+} from "../portfolioInfo";
 
 const StyledBadge = withStyles((theme: Theme) =>
     createStyles({
@@ -60,7 +67,7 @@ const Head: React.FC = () => {
                 <Box
                     py={8}
                     pb={9}
-                    pt={12}
+                    pt={9}
                     textAlign="center"
                     justifyContent="center"
                 >
@@ -77,23 +84,21 @@ const Head: React.FC = () => {
                         component="h2"
                         className={classes.name}
                     >
-                        Riel St. Amand
+                        {name}
                     </Typography>
                     <Typography
                         variant="h5"
                         style={{ marginTop: 60, marginBottom: 20 }}
                         className={classes.text}
                     >
-                        A Machine Learning Engineer and Full Stack Developer. As
-                        a self-taught developer, my goal is always the same with
-                        any project: Learn, Improve, and Produce.
+                        {intro}
                     </Typography>
-                    <a href="https://www.linkedin.com/in/riel-st-amand/">
+                    <a href={linkedInUrl}>
                         <IconButton color="primary">
                             <LinkedInIcon fontSize="large" />
                         </IconButton>
                     </a>
-                    <a href="https://github.com/CanadaApollo6">
+                    <a href={gitHubUrl}>
                         <IconButton>
                             <GitHubIcon
                                 fontSize="large"
@@ -101,7 +106,7 @@ const Head: React.FC = () => {
                             />
                         </IconButton>
                     </a>
-                    <a href="https://github.com/RielStAmandSD">
+                    <a href={gitHubUrlWork}>
                         <IconButton>
                             <StyledBadge badgeContent="Work">
                                 <GitHubIcon
