@@ -1,12 +1,11 @@
 import React from "react";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
-import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import "../containers/main.css";
-import { ProjectCardData } from "../types";
+import { ProjectCardData, spotifyBlack } from "../types";
 
 interface ProjectCardProps {
     data: ProjectCardData;
@@ -17,11 +16,31 @@ const useStyles = makeStyles((theme: Theme) =>
         cardHeaderText: {
             fontSize: 16,
             color: "#ffffff",
+            fontFamily: "Gotham-Black",
         },
-        roleText: {},
+        roleText: { fontFamily: "Gotham-Black", marginTop: theme.spacing(1) },
         companyLogo: {
-            height: "100px",
-            width: "100px",
+            height: theme.spacing(10),
+            width: "60%",
+        },
+        dateText: { fontFamily: "Gotham-Black", color: "grey" },
+        bodyText: {
+            fontFamily: "Gotham-Black",
+            textAlign: "left",
+            color: "grey",
+        },
+        techText: {
+            fontFamily: "Gotham-Black",
+            textAlign: "left",
+            marginBottom: theme.spacing(2),
+            marginTop: theme.spacing(2),
+            color: "grey",
+        },
+        card: {
+            transition: "transform .2s",
+            "&:hover": {
+                transform: "scale(1.02)",
+            },
         },
     })
 );
@@ -29,17 +48,38 @@ const useStyles = makeStyles((theme: Theme) =>
 const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
     const classes = useStyles();
     return (
-        <Card>
+        <Card className={classes.card} elevation={3}>
             <CardHeader
                 title={data.companyName}
                 className={classes.cardHeaderText}
                 style={{ backgroundColor: data.companyColor }}
             />
-            <CardMedia
-                image={data.companyLogo}
-                className={classes.companyLogo}
-            />
-            <CardContent></CardContent>
+
+            <CardContent>
+                <img
+                    src={data.companyLogo}
+                    className={classes.companyLogo}
+                    alt={data.companyName}
+                />
+                <Typography variant="h5" className={classes.roleText}>
+                    {data.role}
+                </Typography>
+                <Typography variant="subtitle1" className={classes.dateText}>
+                    {data.startDate} - {data.endDate}
+                </Typography>
+                <Typography variant="body1" className={classes.techText}>
+                    <strong style={{ color: spotifyBlack }}>
+                        Technologies:{" "}
+                    </strong>
+                    {data.techUsed}
+                </Typography>
+                <Typography variant="body1" className={classes.bodyText}>
+                    <strong style={{ color: spotifyBlack }}>
+                        Description:{" "}
+                    </strong>
+                    {data.description}
+                </Typography>
+            </CardContent>
         </Card>
     );
 };
