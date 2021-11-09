@@ -12,6 +12,7 @@ import ArrowRightAlt from "@material-ui/icons/ArrowRightAlt";
 import "./main.css";
 import { spotifyBlack, spotifyGreen } from "../types";
 import FadeInSection from "../components/Animations/FadeInSection";
+import { bioSteps } from "../portfolioInfo";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -78,7 +79,7 @@ const About: React.FC = () => {
                                 <Card>
                                     <CardMedia
                                         className={classes.media}
-                                        image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                                        image={bioSteps.stepOneImage}
                                     />
                                 </Card>
                             </Grid>
@@ -98,7 +99,7 @@ const About: React.FC = () => {
                                             gutterBottom={true}
                                             className={classes.titleText}
                                         >
-                                            University of Dayton
+                                            {bioSteps.stepOneTitle}
                                         </Typography>
                                         <Typography
                                             variant="body1"
@@ -106,14 +107,7 @@ const About: React.FC = () => {
                                             paragraph={true}
                                             className={classes.bodyText}
                                         >
-                                            I attended the University of Dayton
-                                            from 2016-2020, earning a 3.89 GPA
-                                            while playing in the Pride of Dayton
-                                            Marching Band and Dayton Jazz
-                                            Ensemble. I graduated with a B. Sc.
-                                            in Biology, minors in Chemistry and
-                                            Geology, and a 2-year GIS graduate
-                                            certificate.
+                                            {bioSteps.stepOneDescription}
                                         </Typography>
                                     </Box>
                                 </Box>
@@ -133,7 +127,7 @@ const About: React.FC = () => {
                                 <Card>
                                     <CardMedia
                                         className={classes.media}
-                                        image="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
+                                        image={bioSteps.stepTwoImage}
                                     />
                                 </Card>
                             </Grid>
@@ -158,7 +152,7 @@ const About: React.FC = () => {
                                             gutterBottom={true}
                                             className={classes.titleText}
                                         >
-                                            Smart Data - Intern
+                                            {bioSteps.stepTwoTitle}
                                         </Typography>
                                         <Typography
                                             variant="body1"
@@ -166,15 +160,7 @@ const About: React.FC = () => {
                                             paragraph={true}
                                             className={classes.bodyText}
                                         >
-                                            From May of 2020 until August of
-                                            that same year, I became a software
-                                            developer intern at Smart Data. I
-                                            spent my time doing hundreds of
-                                            hours of learning from other
-                                            developers and online courses from
-                                            Udemy, along with some basic React
-                                            development on a project for Google
-                                            Cloud.
+                                            {bioSteps.stepTwoDescription}
                                         </Typography>
                                     </Box>
                                 </Box>
@@ -185,7 +171,7 @@ const About: React.FC = () => {
                                 <Card>
                                     <CardMedia
                                         className={classes.media}
-                                        image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
+                                        image={bioSteps.stepThreeImage}
                                     />
                                 </Card>
                             </Grid>
@@ -205,7 +191,7 @@ const About: React.FC = () => {
                                             gutterBottom={true}
                                             className={classes.titleText}
                                         >
-                                            Smart Data - Software Engineer
+                                            {bioSteps.stepThreeTitle}
                                         </Typography>
                                         <Typography
                                             variant="body1"
@@ -213,11 +199,7 @@ const About: React.FC = () => {
                                             paragraph={true}
                                             className={classes.bodyText}
                                         >
-                                            After my internship ended, I
-                                            accepted an offer in August of 2020
-                                            to remain at Smart Data and become a
-                                            full-time software engineer, where I
-                                            remain now.
+                                            {bioSteps.stepThreeDescription}
                                         </Typography>
                                         <Link
                                             to="section3"
