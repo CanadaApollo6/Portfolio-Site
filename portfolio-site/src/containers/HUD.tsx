@@ -5,6 +5,9 @@ import Skills from "./Skills";
 import NavTabsDesktop from "../components/Navigation/NavTabsDesktop";
 import "./main.css";
 import Hidden from "@material-ui/core/Hidden";
+import Projects from "./Projects";
+import Reviews from "./Reviews";
+import NavMobile from "../components/Navigation/NavMobile";
 
 const HUD: React.FC = () => {
     return (
@@ -17,9 +20,14 @@ const HUD: React.FC = () => {
             <Hidden smDown>
                 <NavTabsDesktop />
             </Hidden>
+            <Hidden mdUp>
+                <NavMobile />
+            </Hidden>
             <Head />
             <About />
             <Skills />
+            <Projects />
+            <Reviews />
         </div>
     );
 };
