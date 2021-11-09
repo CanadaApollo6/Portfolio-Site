@@ -4,7 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import { spotifyBlack, NavButtonData } from "../../types";
 import { makeStyles, createStyles } from "@material-ui/core/styles";
 import { Link } from "react-scroll";
-import "../containers/main.css";
+import "../../containers/main.css";
 
 const useStyles = makeStyles(() =>
     createStyles({
