@@ -21,3 +21,22 @@ export interface NavButtonData {
     label: string;
     sectionId: string;
 }
+
+export interface ReviewCardData {
+    quote: string;
+    reviewerName: string;
+    reviewerTitle: string;
+    reviewerCompany: string;
+}
+
+export interface BioStepData {
+    stepOneTitle: string;
+    stepOneDescription: string;
+    stepOneImage: string;
+    stepTwoTitle: string;
+    stepTwoDescription: string;
+    stepTwoImage: string;
+    stepThreeTitle: string;
+    stepThreeDescription: string;
+    stepThreeImage: string;
+}
