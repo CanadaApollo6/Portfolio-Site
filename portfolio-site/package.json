@@ -1,7 +1,7 @@
 {
     "name": "portfolio-site",
     "version": "0.1.0",
-    "homepage": "https://canadaapollo6.github.io/portfolio-site",
+    "homepage": "https://canadaapollo6.github.io/Portfolio-Site",
     "private": true,
     "dependencies": {
         "@material-ui/core": "^4.12.3",
