@@ -2,8 +2,9 @@ import React from "react";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import { spotifyBlack, spotifyGreen, ReviewCardData } from "../types";
+import { spotifyBlack, ReviewCardData } from "../types";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
+import { themeColor } from "../portfolioInfo";
 import "../containers/main.css";
 
 interface ReviewCardProps {
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme: Theme) =>
             textAlign: "left",
         },
         companyText: {
-            color: spotifyGreen,
+            color: themeColor,
             fontFamily: "Gotham-Black",
             textAlign: "left",
         },

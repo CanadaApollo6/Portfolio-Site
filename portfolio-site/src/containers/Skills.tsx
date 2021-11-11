@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import SkillAvatar from "../components/SkillAvatar";
 import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
-import { SkillAvatarProps, spotifyGreen } from "../types";
+import { SkillAvatarProps } from "../types";
 import Animation from "../components/Animations/Animation";
 import WebDevAnimation from "../components/Animations/JSON/web-developer.json";
 import Button from "@material-ui/core/Button";
@@ -13,7 +13,7 @@ import ArrowRightAlt from "@material-ui/icons/ArrowRightAlt";
 import { Link } from "react-scroll";
 import "./main.css";
 import FadeInSection from "../components/Animations/FadeInSection";
-import { skills } from "../portfolioInfo";
+import { skills, themeColor } from "../portfolioInfo";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         button: {
             marginTop: 15,
-            color: spotifyGreen,
+            color: themeColor,
             fontFamily: "Gotham-Black",
         },
     })

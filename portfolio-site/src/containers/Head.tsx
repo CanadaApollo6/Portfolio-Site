@@ -19,19 +19,20 @@ import {
     Theme,
     makeStyles,
 } from "@material-ui/core/styles";
-import { spotifyGreen, spotifyBlack } from "../types";
+import { spotifyBlack } from "../types";
 import {
     name,
     intro,
     linkedInUrl,
     gitHubUrl,
     gitHubUrlWork,
+    themeColor,
 } from "../portfolioInfo";
 
 const StyledBadge = withStyles((theme: Theme) =>
     createStyles({
         badge: {
-            backgroundColor: spotifyGreen,
+            backgroundColor: themeColor,
             color: spotifyBlack,
             fontFamily: "Gotham-Black",
         },
@@ -46,7 +47,7 @@ const useStyles = makeStyles(() =>
         },
         readText: {
             fontFamily: "Gotham-Black",
-            color: spotifyGreen,
+            color: themeColor,
         },
         name: {
             marginTop: 60,

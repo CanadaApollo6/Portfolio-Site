@@ -1,15 +1,16 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import { NavButtonData, spotifyGreen } from "../../types";
+import { NavButtonData } from "../../types";
 import { makeStyles, createStyles } from "@material-ui/core/styles";
 import { Link } from "react-scroll";
+import { themeColor } from "../../portfolioInfo";
 import "../../containers/main.css";
 
 const useStyles = makeStyles(() =>
     createStyles({
         text: {
-            color: spotifyGreen,
+            color: themeColor,
             fontFamily: "Gotham-Black",
         },
     })

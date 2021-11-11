@@ -10,9 +10,9 @@ import { Link } from "react-scroll";
 import Button from "@material-ui/core/Button";
 import ArrowRightAlt from "@material-ui/icons/ArrowRightAlt";
 import "./main.css";
-import { spotifyBlack, spotifyGreen } from "../types";
+import { spotifyBlack } from "../types";
 import FadeInSection from "../components/Animations/FadeInSection";
-import { bioSteps } from "../portfolioInfo";
+import { bioSteps, themeColor } from "../portfolioInfo";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         numberHeaders: {
             fontFamily: "Gotham-Black",
-            color: spotifyGreen,
+            color: themeColor,
         },
         titleText: {
             fontFamily: "Gotham-Black",
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         readText: {
             fontFamily: "Gotham-Black",
-            color: spotifyGreen,
+            color: themeColor,
         },
     })
 );

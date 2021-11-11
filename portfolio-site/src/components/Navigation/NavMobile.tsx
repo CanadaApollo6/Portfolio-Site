@@ -10,15 +10,15 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import "../../containers/main.css";
-import { NavButtonData, spotifyBlack, spotifyGreen } from "../../types";
-import { name, linkedInUrl, navTabs } from "../../portfolioInfo";
+import { NavButtonData, spotifyBlack } from "../../types";
+import { name, linkedInUrl, navTabs, themeColor } from "../../portfolioInfo";
 import NavButtonMobile from "./NavButtonMobile";
 import Divider from "@material-ui/core/Divider";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         navBar: {
-            backgroundColor: spotifyGreen,
+            backgroundColor: themeColor,
         },
         menuButton: {
             marginRight: theme.spacing(2),

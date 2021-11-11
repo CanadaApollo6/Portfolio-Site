@@ -4,6 +4,7 @@ import {
     SkillAvatarProps,
     BioStepData,
     NavButtonData,
+    spotifyGreen,
 } from "./types";
 import CarlisleLogo from "./images/carlisle-logo.png";
 import DaveyLogo from "./images/davey-logo.png";
@@ -20,6 +21,8 @@ import CssLogo from "./images/css-logo.png";
 import RLogo from "./images/r-logo.png";
 import OfficeLogo from "./images/office-logo.png";
 import FlutterLogo from "./images/flutter-logo.png";
+
+export const themeColor: string = spotifyGreen;
 
 export const name: string = "Riel St. Amand";
 export const intro: string =

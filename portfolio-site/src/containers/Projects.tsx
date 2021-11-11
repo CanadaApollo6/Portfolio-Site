@@ -7,11 +7,11 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import ArrowRightAlt from "@material-ui/icons/ArrowRightAlt";
-import { ProjectCardData, spotifyGreen } from "../types";
+import { ProjectCardData } from "../types";
 import "./main.css";
 import ProjectCard from "../components/ProjectCard";
 import { Link } from "react-scroll";
-import { projects } from "../portfolioInfo";
+import { projects, themeColor } from "../portfolioInfo";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
         gridContainer: { justifyContent: "center" },
         button: {
             marginTop: 30,
-            color: spotifyGreen,
+            color: themeColor,
             fontFamily: "Gotham-Black",
         },
     })
