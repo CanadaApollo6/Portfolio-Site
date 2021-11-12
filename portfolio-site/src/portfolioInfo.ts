@@ -4,25 +4,36 @@ import {
     SkillAvatarProps,
     BioStepData,
     NavButtonData,
-    spotifyGreen,
 } from "./types";
-import CarlisleLogo from "./images/carlisle-logo.png";
-import DaveyLogo from "./images/davey-logo.png";
-import CbsLogo from "./images/cbs-logo.png";
-import GoogleLogo from "./images/google-cloud-logo.svg";
-import PythonLogo from "./images/python-logo.png";
-import TensorFlowLogo from "./images/tensorflow-logo.png";
-import TypeScriptLogo from "./images/typescript-logo.png";
-import SqlLogo from "./images/sql-logo.png";
-import ReactLogo from "./images/react-logo.png";
-import JsLogo from "./images/js-logo.png";
-import HtmlLogo from "./images/html-logo.png";
-import CssLogo from "./images/css-logo.png";
-import RLogo from "./images/r-logo.png";
-import OfficeLogo from "./images/office-logo.png";
-import FlutterLogo from "./images/flutter-logo.png";
+import CarlisleLogo from "./images/logos/carlisle-logo.png";
+import DaveyLogo from "./images/logos/davey-logo.png";
+import CbsLogo from "./images/logos/cbs-logo.png";
+import GoogleLogo from "./images/logos/google-cloud-logo.svg";
+import PythonLogo from "./images/logos/python-logo.png";
+import TensorFlowLogo from "./images/logos/tensorflow-logo.png";
+import TypeScriptLogo from "./images/logos/typescript-logo.png";
+import SqlLogo from "./images/logos/sql-logo.png";
+import ReactLogo from "./images/logos/react-logo.png";
+import JsLogo from "./images/logos/js-logo.png";
+import HtmlLogo from "./images/logos/html-logo.png";
+import CssLogo from "./images/logos/css-logo.png";
+import RLogo from "./images/logos/r-logo.png";
+import OfficeLogo from "./images/logos/office-logo.png";
+import FlutterLogo from "./images/logos/flutter-logo.png";
+import GravityDashboard from "./images/projects/gravity/gravity-dashboard.png";
+import GravityElution from "./images/projects/gravity/gravity-elution.png";
+import GravityGraphs from "./images/projects/gravity/gravity-graphs.png";
+import DaveyDashboard from "./images/projects/davey/davey-dashboard.png";
+import DaveyDashboardSider from "./images/projects/davey/davey-dashboard-2.png";
+import DaveyMessageDesktop from "./images/projects/davey/davey-message-desktop.png";
+import DaveyMobileOne from "./images/projects/davey/davey-mobile-1.png";
+import DaveyMobileTwo from "./images/projects/davey/davey-mobile-2.png";
+import DaveyMobileThree from "./images/projects/davey/davey-mobile-3.png";
+import DaveyMobileMenu from "./images/projects/davey/davey-mobile-menu.png";
+import DaveyMobileMessages from "./images/projects/davey/davey-mobile-messages.png";
+import DaveyMobileMessageForm from "./images/projects/davey/davey-mobile-message-form.png";
 
-export const themeColor: string = spotifyGreen;
+export const themeColor: string = "#0099ff";
 
 export const name: string = "Riel St. Amand";
 export const intro: string =
@@ -54,23 +65,29 @@ export const navTabs: NavButtonData[] = [
     },
 ];
 
-export const bioSteps: BioStepData = {
-    stepOneTitle: "University of Dayton",
-    stepOneDescription:
-        "I attended the University of Dayton from 2016-2020, earning a 3.89 GPA while playing in the Pride of Dayton Marching Band and Dayton Jazz Ensemble. I graduated with a B. Sc. in Biology, minors in Chemistry and Geology, and a 2-year GIS graduate certificate.",
-    stepOneImage:
-        "https://images.unsplash.com/photo-1601510683322-a4d0c7131572?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    stepTwoTitle: "Smart Data - Intern",
-    stepTwoDescription:
-        "From May of 2020 until August of that same year, I became a software developer intern at Smart Data. I spent my time doing hundreds of hours of learning from other developers and online courses from Udemy, along with some basic React development on a project for Google Cloud.",
-    stepTwoImage:
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80",
-    stepThreeTitle: "Smart Data - Software Engineer",
-    stepThreeDescription:
-        "After my internship ended, I accepted an offer in August of 2020 to remain at Smart Data and become a full-time software engineer, where I remain now.",
-    stepThreeImage:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80",
-};
+export const bioStepList: BioStepData[] = [
+    {
+        step: "01",
+        title: "University of Dayton",
+        description:
+            "I attended the University of Dayton from 2016-2020, earning a 3.89 GPA while playing in the Pride of Dayton Marching Band and Dayton Jazz Ensemble. I graduated with a B. Sc. in Biology, minors in Chemistry and Geology, and a 2-year GIS graduate certificate.",
+        image: "https://images.unsplash.com/photo-1601510683322-a4d0c7131572?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    },
+    {
+        step: "02",
+        title: "Smart Data - Intern",
+        description:
+            "From May of 2020 until August of that same year, I became a software developer intern at Smart Data. I spent my time doing hundreds of hours of learning from other developers and online courses from Udemy, along with some basic React development on a project for Google Cloud.",
+        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80",
+    },
+    {
+        step: "03",
+        title: "Smart Data - Software Engineer",
+        description:
+            "After my internship ended, I accepted an offer in August of 2020 to remain at Smart Data and become a full-time software engineer, where I remain now.",
+        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80",
+    },
+];
 
 export const skills: SkillAvatarProps[] = [
     {
@@ -119,6 +136,8 @@ export const skills: SkillAvatarProps[] = [
     },
 ];
 
+const mobileImageHeight: number = 500;
+
 export const projects: ProjectCardData[] = [
     {
         companyName: "Carlisle Companies Inc",
@@ -141,6 +160,50 @@ export const projects: ProjectCardData[] = [
             "Worked as the primary front-end developer on a new customer portal for Davey Tree using React/TS. The application integrates with SAP Customer Data Cloud and a custom .NET Core API.",
         companyColor: "#008751",
         companyLogo: DaveyLogo,
+        gallery: [
+            {
+                image: DaveyDashboard,
+                title: "Dashboard",
+            },
+            {
+                image: DaveyDashboardSider,
+                title: "Dashboard w/Sider Open",
+            },
+            {
+                image: DaveyMessageDesktop,
+                title: "New Message Form",
+            },
+            {
+                image: DaveyMobileOne,
+                title: "Mobile Screen Top",
+                height: mobileImageHeight,
+            },
+            {
+                image: DaveyMobileTwo,
+                title: "Mobile Screen Middle",
+                height: mobileImageHeight,
+            },
+            {
+                image: DaveyMobileThree,
+                title: "Mobile Screen Bottom",
+                height: mobileImageHeight,
+            },
+            {
+                image: DaveyMobileMenu,
+                title: "Mobile Menu",
+                height: mobileImageHeight,
+            },
+            {
+                image: DaveyMobileMessages,
+                title: "Mobile Message Display",
+                height: mobileImageHeight,
+            },
+            {
+                image: DaveyMobileMessageForm,
+                title: "Mobile Message Form",
+                height: mobileImageHeight,
+            },
+        ],
     },
     {
         companyName: "Cooperative Business Services",
@@ -164,6 +227,20 @@ export const projects: ProjectCardData[] = [
         companyColor: "black",
         companyLogo:
             "https://gravitydiagnostics.com/wp-content/uploads/2018/05/Gravity-Diagnostics-Logo-10in.svg",
+        gallery: [
+            {
+                image: GravityGraphs,
+                title: "Result Graphs",
+            },
+            {
+                image: GravityDashboard,
+                title: "Dashboard",
+            },
+            {
+                image: GravityElution,
+                title: "Elution Display",
+            },
+        ],
     },
     {
         companyName: "Green Building Consulting",
