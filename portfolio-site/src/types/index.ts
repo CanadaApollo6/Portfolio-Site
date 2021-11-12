@@ -6,6 +6,12 @@ export interface SkillAvatarProps {
 export const spotifyGreen = "#1db954";
 export const spotifyBlack = "#191414";
 
+export interface ProjectGalleryData {
+    image: string;
+    title: string;
+    height?: number;
+}
+
 export interface ProjectCardData {
     companyName: string;
     companyLogo: string;
@@ -15,6 +21,7 @@ export interface ProjectCardData {
     endDate: string;
     techUsed: string;
     description: string;
+    gallery?: ProjectGalleryData[];
 }
 
 export interface NavButtonData {
@@ -30,13 +37,8 @@ export interface ReviewCardData {
 }
 
 export interface BioStepData {
-    stepOneTitle: string;
-    stepOneDescription: string;
-    stepOneImage: string;
-    stepTwoTitle: string;
-    stepTwoDescription: string;
-    stepTwoImage: string;
-    stepThreeTitle: string;
-    stepThreeDescription: string;
-    stepThreeImage: string;
+    title: string;
+    description: string;
+    image: string;
+    step: string;
 }
