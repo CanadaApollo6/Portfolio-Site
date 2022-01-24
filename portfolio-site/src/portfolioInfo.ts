@@ -84,8 +84,15 @@ export const bioStepList: BioStepData[] = [
         step: "03",
         title: "Smart Data - Software Engineer",
         description:
-            "After my internship ended, I accepted an offer in August of 2020 to remain at Smart Data and become a full-time software engineer, where I remain now.",
+            "After my internship ended, I accepted an offer in August of 2020 to remain at Smart Data and become a full-time software engineer.",
         image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80",
+    },
+    {
+        step: "04",
+        title: "Core BTS - Senior Software Engineer",
+        description:
+            "After almost 2 years at Smart Data, I accepted a role at Core BTS to become a Senior Software Engineer, where I am now.",
+        image: "https://images.unsplash.com/photo-1514428631868-a400b561ff44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80",
     },
 ];
 
