@@ -149,11 +149,11 @@ export const projects: ProjectCardData[] = [
     {
         companyName: "Carlisle Companies Inc",
         startDate: "November 2021",
-        endDate: "Present",
+        endDate: "December 2021",
         role: "Full Stack Engineer",
         techUsed: "React, TypeScript, Python, Flask, SQL Server, SSMS",
         description:
-            "Working on a 6 month contract with Carlisle as a Smart Data developer, helping to add new workflows to an existing React/TS web application with a Flask back-end built on a SQL Server database.",
+            "Worked on a contract with Carlisle Companies as a Smart Data developer, helping to add new workflows to an existing React/TS web application with a Flask back-end built on a SQL Server database.",
         companyColor: "#004daa",
         companyLogo: CarlisleLogo,
     },
