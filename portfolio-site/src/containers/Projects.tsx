@@ -11,66 +11,63 @@ import { ProjectCardData } from "../types";
 import "./main.css";
 import ProjectCard from "../components/ProjectCard";
 import { Link } from "react-scroll";
-import { projects, themeColor } from "../portfolioInfo";
+import { themeColor } from "../content/Intro";
+import { projects } from "../content/Projects";
 
 const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        titleText: { fontFamily: "Gotham-Black", marginBottom: 30 },
-        gridContainer: { justifyContent: "center" },
-        button: {
-            marginTop: 30,
-            color: themeColor,
-            fontFamily: "Gotham-Black",
-        },
-    })
+  createStyles({
+    titleText: { fontFamily: "Gotham-Black", marginBottom: 30 },
+    gridContainer: { justifyContent: "center" },
+    button: {
+      marginTop: 30,
+      color: themeColor,
+      fontFamily: "Gotham-Black",
+    },
+  })
 );
 
 const Projects: React.FC = () => {
-    const classes = useStyles();
-    return (
-        <section id="section4">
-            <FadeInSection>
-                <Container maxWidth="md">
-                    <Box textAlign="center" pt={9} pb={9}>
-                        <Typography
-                            variant="h3"
-                            component="h2"
-                            className={classes.titleText}
-                            gutterBottom
-                        >
-                            Professional Projects
-                        </Typography>
-                        <Grid
-                            container
-                            className={classes.gridContainer}
-                            spacing={5}
-                        >
-                            {projects.map((project: ProjectCardData) => (
-                                <Grid item xs={12} md={6}>
-                                    <ProjectCard data={project} />
-                                </Grid>
-                            ))}
-                        </Grid>
-                        <Link
-                            to="section5"
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}
-                            duration={1000}
-                        >
-                            <Button
-                                endIcon={<ArrowRightAlt />}
-                                color="primary"
-                                className={classes.button}
-                            >
-                                Read More
-                            </Button>
-                        </Link>
-                    </Box>
-                </Container>
-            </FadeInSection>
-        </section>
-    );
+  const classes = useStyles();
+  return (
+    <section id="projects">
+      <FadeInSection>
+        <Container maxWidth="md">
+          <Box textAlign="center" pt={9} pb={9}>
+            <Typography
+              variant="h3"
+              component="h2"
+              className={classes.titleText}
+              gutterBottom
+            >
+              Professional Projects ({projects.length})
+            </Typography>
+            <Grid container className={classes.gridContainer} spacing={5}>
+              {projects.map((project: ProjectCardData) => (
+                <Grid item xs={12} md={6}>
+                  <ProjectCard data={project} />
+                </Grid>
+              ))}
+            </Grid>
+            <Link
+              to="courses"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              <Button
+                endIcon={<ArrowRightAlt />}
+                color="primary"
+                className={classes.button}
+              >
+                Read More
+              </Button>
+            </Link>
+          </Box>
+        </Container>
+      </FadeInSection>
+    </section>
+  );
 };
 
 export default Projects;
