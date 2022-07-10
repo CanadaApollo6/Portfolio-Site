@@ -4,44 +4,44 @@ import Typography from "@material-ui/core/Typography";
 import { NavButtonData } from "../../types";
 import { makeStyles, createStyles } from "@material-ui/core/styles";
 import { Link } from "react-scroll";
-import { themeColor } from "../../portfolioInfo";
+import { themeColor } from "../../content/Intro";
 import "../../containers/main.css";
 
 const useStyles = makeStyles(() =>
-    createStyles({
-        text: {
-            color: themeColor,
-            fontFamily: "Gotham-Black",
-        },
-    })
+  createStyles({
+    text: {
+      color: themeColor,
+      fontFamily: "Gotham-Black",
+    },
+  })
 );
 
 interface NavButtonMobileProps extends NavButtonData {
-    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const NavButtonMobile: React.FC<NavButtonMobileProps> = ({
-    label,
-    sectionId,
-    setOpen,
+  label,
+  sectionId,
+  setOpen,
 }) => {
-    const classes = useStyles();
-    return (
-        <Link
-            to={sectionId}
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            duration={2500}
-            onClick={() => setOpen(false)}
-        >
-            <Button>
-                <Typography variant="h6" className={classes.text}>
-                    {label}
-                </Typography>
-            </Button>
-        </Link>
-    );
+  const classes = useStyles();
+  return (
+    <Link
+      to={sectionId}
+      activeClass="active"
+      spy={true}
+      smooth={true}
+      duration={2500}
+      onClick={() => setOpen(false)}
+    >
+      <Button>
+        <Typography variant="h6" className={classes.text}>
+          {label}
+        </Typography>
+      </Button>
+    </Link>
+  );
 };
 
 export default NavButtonMobile;
