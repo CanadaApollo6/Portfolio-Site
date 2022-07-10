@@ -7,29 +7,31 @@ import "./main.css";
 import Hidden from "@material-ui/core/Hidden";
 import Projects from "./Projects";
 import Reviews from "./Reviews";
+import Courses from "./Courses";
 import NavMobile from "../components/Navigation/NavMobile";
 
 const HUD: React.FC = () => {
-    return (
-        <div
-            style={{
-                backgroundColor: "#ffffff",
-                fontFamily: "Gotham",
-            }}
-        >
-            <Hidden smDown>
-                <NavTabsDesktop />
-            </Hidden>
-            <Hidden mdUp>
-                <NavMobile />
-            </Hidden>
-            <Head />
-            <About />
-            <Skills />
-            <Projects />
-            <Reviews />
-        </div>
-    );
+  return (
+    <div
+      style={{
+        backgroundColor: "#ffffff",
+        fontFamily: "Gotham",
+      }}
+    >
+      <Hidden smDown>
+        <NavTabsDesktop />
+      </Hidden>
+      <Hidden mdUp>
+        <NavMobile />
+      </Hidden>
+      <Head />
+      <About />
+      <Skills />
+      <Projects />
+      <Courses />
+      <Reviews />
+    </div>
+  );
 };
 
 export default HUD;
