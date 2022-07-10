@@ -11,116 +11,110 @@ import { ProjectCardData, spotifyBlack } from "../types";
 import ProjectGallery from "./ProjectGallery";
 
 interface ProjectCardProps {
-    data: ProjectCardData;
+  data: ProjectCardData;
 }
 
 const useStyles = makeStyles((theme: Theme) =>
-    createStyles({
-        cardHeaderText: {
-            fontSize: 16,
-            color: "#ffffff",
-            fontFamily: "Gotham-Black",
-        },
-        roleText: { fontFamily: "Gotham-Black", marginTop: theme.spacing(1) },
-        companyLogo: {
-            height: theme.spacing(10),
-            width: "60%",
-        },
-        dateText: { fontFamily: "Gotham-Black", color: "grey" },
-        bodyText: {
-            fontFamily: "Gotham-Black",
-            textAlign: "left",
-            color: "grey",
-        },
-        techText: {
-            fontFamily: "Gotham-Black",
-            textAlign: "left",
-            marginBottom: theme.spacing(2),
-            marginTop: theme.spacing(2),
-            color: "grey",
-        },
-        card: {
-            transition: "transform .2s",
-            "&:hover": {
-                transform: "scale(1.02)",
-            },
-        },
-        galleryText: {
-            fontFamily: "Gotham-Black",
-        },
-        button: {
-            marginTop: theme.spacing(2),
-            textTransform: "none",
-            color: spotifyBlack,
-        },
-    })
+  createStyles({
+    cardHeaderText: {
+      fontSize: 16,
+      color: "#ffffff",
+      fontFamily: "Gotham-Black",
+    },
+    roleText: { fontFamily: "Gotham-Black", marginTop: theme.spacing(1) },
+    companyLogo: {
+      height: theme.spacing(10),
+      width: "60%",
+    },
+    dateText: { fontFamily: "Gotham-Black", color: "grey" },
+    bodyText: {
+      fontFamily: "Gotham-Black",
+      textAlign: "left",
+      color: "grey",
+    },
+    techText: {
+      fontFamily: "Gotham-Black",
+      textAlign: "left",
+      marginBottom: theme.spacing(2),
+      marginTop: theme.spacing(2),
+      color: "grey",
+    },
+    card: {
+      transition: "transform .2s",
+      "&:hover": {
+        transform: "scale(1.02)",
+      },
+    },
+    galleryText: {
+      fontFamily: "Gotham-Black",
+    },
+    button: {
+      marginTop: theme.spacing(2),
+      textTransform: "none",
+      color: spotifyBlack,
+    },
+  })
 );
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
-    const classes = useStyles();
-    const [galleryOpen, setGalleryOpen] = useState<boolean>(false);
-    const handleOpen = () => {
-        setGalleryOpen(true);
-    };
-    return (
-        <>
-            <Card className={classes.card} elevation={3}>
-                <CardHeader
-                    title={data.companyName}
-                    className={classes.cardHeaderText}
-                    style={{ backgroundColor: data.companyColor }}
-                />
+  const classes = useStyles();
+  const [galleryOpen, setGalleryOpen] = useState<boolean>(false);
+  const handleOpen = () => {
+    setGalleryOpen(true);
+  };
+  return (
+    <>
+      <Card className={classes.card} elevation={3}>
+        <CardHeader
+          title={data.companyName}
+          className={classes.cardHeaderText}
+          style={{ background: data.companyColor }}
+        />
 
-                <CardContent>
-                    <img
-                        src={data.companyLogo}
-                        className={classes.companyLogo}
-                        alt={data.companyName}
-                    />
-                    <Typography variant="h5" className={classes.roleText}>
-                        {data.role}
-                    </Typography>
-                    <Typography
-                        variant="subtitle1"
-                        className={classes.dateText}
-                    >
-                        {data.startDate} - {data.endDate}
-                    </Typography>
-                    <Typography variant="body1" className={classes.techText}>
-                        <strong style={{ color: spotifyBlack }}>
-                            Technologies:{" "}
-                        </strong>
-                        {data.techUsed}
-                    </Typography>
-                    <Typography variant="body1" className={classes.bodyText}>
-                        <strong style={{ color: spotifyBlack }}>
-                            Description:{" "}
-                        </strong>
-                        {data.description}
-                    </Typography>
-                    <Button
-                        startIcon={<PhotoLibraryOutlinedIcon />}
-                        className={classes.button}
-                        disabled={data.gallery ? false : true}
-                        onClick={handleOpen}
-                        variant="contained"
-                    >
-                        <Typography className={classes.galleryText}>
-                            View Gallery
-                        </Typography>
-                    </Button>
-                </CardContent>
-            </Card>
-            {data.gallery ? (
-                <ProjectGallery
-                    open={galleryOpen}
-                    setOpen={setGalleryOpen}
-                    companyName={data.companyName}
-                    gallery={data.gallery}
-                />
-            ) : null}
-        </>
-    );
+        <CardContent>
+          <img
+            src={data.companyLogo}
+            className={classes.companyLogo}
+            alt={data.companyName}
+          />
+          <Typography variant="h5" className={classes.roleText}>
+            {data.role}
+          </Typography>
+          <Typography variant="subtitle1" className={classes.dateText}>
+            {data.startDate} - {data.endDate}
+          </Typography>
+          <Typography variant="body1" className={classes.techText}>
+            <strong style={{ color: spotifyBlack }}>Technologies: </strong>
+            {data.techUsed}
+          </Typography>
+          <Typography variant="body1" className={classes.bodyText}>
+            <strong style={{ color: spotifyBlack }}>Description: </strong>
+            {data.description}
+          </Typography>
+          {data.gallery ? (
+            <Button
+              startIcon={<PhotoLibraryOutlinedIcon />}
+              className={classes.button}
+              onClick={handleOpen}
+              variant="contained"
+            >
+              <Typography className={classes.galleryText}>
+                View Gallery
+              </Typography>
+            </Button>
+          ) : null}
+        </CardContent>
+      </Card>
+      {data.gallery ? (
+        <ProjectGallery
+          open={galleryOpen}
+          setOpen={setGalleryOpen}
+          companyName={data.companyName}
+          gallery={data.gallery}
+        />
+      ) : null}
+    </>
+  );
 };
 
 export default ProjectCard;
