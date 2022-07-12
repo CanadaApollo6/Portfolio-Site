@@ -17,7 +17,7 @@ export const courses: CourseCardData[] = [
   {
     title: "Complete Python Developer in 2020: Zero To Mastery",
     technologies:
-      "Python 3.X, Anaconda, Selenium, Jupyter Notebooks, SK-Learn, TensorFlow 2.X",
+      "Python, Anaconda, Selenium, Jupyter Notebooks, SK-Learn, TensorFlow 2.X",
     description:
       "A large course teaching Python 3 from scratch and common uses of Python today.",
     hours: 31,
@@ -44,7 +44,7 @@ export const courses: CourseCardData[] = [
   {
     title: "Complete Machine Learning & Data Science Bootcamp 2022",
     technologies:
-      "Python 3, SK-Learn, TensorFlow 2.X, Colab, Pandas, NumPy, MatPlotLib",
+      "Python, SK-Learn, TensorFlow 2.X, Colab, Pandas, NumPy, MatPlotLib",
     description:
       "Mostly completed in summer 2020. It gave me a strong base in Python-driven ML.",
     hours: 44,
@@ -54,6 +54,18 @@ export const courses: CourseCardData[] = [
     courseCertificateUrl:
       "https://drive.google.com/file/d/1njRd_G3Kah8l6XyLUF_GjtTEvDw4oNlE/view?usp=sharing",
     isComplete: true,
+  },
+  {
+    title: "The Complete Junior to Senior Web Developer Roadmap",
+    technologies: "React, TypeScript, Docker, Redis, AWS Lambda, Jest, Enzyme",
+    description:
+      "A course I keep returning to that teaches many important modern web techs.",
+    hours: 37,
+    instructor: "Andrei Neagoie",
+    courseUrl: "https://academy.zerotomastery.io/courses/700470",
+    logo: "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/1PZWCYdaRziBzHc1uhGt",
+    courseCertificateUrl: "",
+    isComplete: false,
   },
   {
     title: "Master the Coding Interview: Data Structures + Algorithms",
@@ -83,7 +95,7 @@ export const courses: CourseCardData[] = [
     title: "PyTorch for Deep Learning: Zero to Mastery",
     technologies: "Python, PyTorch, Colab",
     description:
-      "A large course I have started on PyTorch and plan to complete after the TensorFlow Developer Exam",
+      "A course I have started on PyTorch and plan to complete after the TF Certificate.",
     hours: 27,
     instructor: "Daniel Bourke",
     courseUrl: "https://academy.zerotomastery.io/courses/1808210",

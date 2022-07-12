@@ -116,7 +116,7 @@ export const projects: ProjectCardData[] = [
     startDate: "October 2020",
     endDate: "January 2021",
     role: "Machine Learning Engineer",
-    techUsed: "Python, TensorFlow, Google Colab, React, TypeScript",
+    techUsed: "Python, TensorFlow, Google Colab, React, TypeScript, Docker",
     description:
       "Created a suite of Tensorflow neural nets to automate COVID-19 PCR test diagnosis along with a React/TS dashboard for data visualization",
     companyColor: "black",
@@ -154,9 +154,9 @@ export const projects: ProjectCardData[] = [
     startDate: "June 2020",
     endDate: "August 2020",
     role: "React Developer (Intern)",
-    techUsed: "React, TypeScript, Firebase",
+    techUsed: "React, TypeScript, Cloud Firestore",
     description:
-      "Worked on React/TS code for a project with Google Cloud, including file upload to Firebase and basic page templates.",
+      "Worked on React/TS code for a project with Google Cloud, including file upload to Cloud Firestore and basic page templates.",
     companyColor: "rgb(68, 132, 244)",
     companyLogo: GoogleLogo,
   },

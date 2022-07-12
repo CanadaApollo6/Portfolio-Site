@@ -11,6 +11,11 @@ import RLogo from "../images/logos/r-logo.png";
 import OfficeLogo from "../images/logos/office-logo.png";
 import FlutterLogo from "../images/logos/flutter-logo.png";
 import AzureBotServiceLogo from "../images/logos/azurebotservice-logo.png";
+import AzureLogo from "../images/logos/azure-logo.png";
+import FirestoreLogo from "../images/logos/firestore-logo.png";
+import DartLogo from "../images/logos/dart-logo.png";
+import AwsLambdaLogo from "../images/logos/awslambda-logo.png";
+import RedisLogo from "../images/logos/redis-logo.png";
 
 export const skills: SkillAvatarProps[] = [
   {
@@ -46,8 +51,29 @@ export const skills: SkillAvatarProps[] = [
     imageSrc: CssLogo,
   },
   {
+    skillName: "Docker",
+    imageSrc:
+      "https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png",
+  },
+  {
+    skillName: "Azure",
+    imageSrc: AzureLogo,
+  },
+  {
     skillName: "Azure Bot Service",
     imageSrc: AzureBotServiceLogo,
+  },
+  {
+    skillName: "Cloud Firestore",
+    imageSrc: FirestoreLogo,
+  },
+  {
+    skillName: "AWS Lambda",
+    imageSrc: AwsLambdaLogo,
+  },
+  {
+    skillName: "Redis",
+    imageSrc: RedisLogo,
   },
   {
     skillName: "R",
@@ -60,5 +86,9 @@ export const skills: SkillAvatarProps[] = [
   {
     skillName: "Flutter",
     imageSrc: FlutterLogo,
+  },
+  {
+    skillName: "Dart",
+    imageSrc: DartLogo,
   },
 ];
