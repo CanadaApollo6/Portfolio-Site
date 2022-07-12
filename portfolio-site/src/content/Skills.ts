@@ -16,6 +16,8 @@ import FirestoreLogo from "../images/logos/firestore-logo.png";
 import DartLogo from "../images/logos/dart-logo.png";
 import AwsLambdaLogo from "../images/logos/awslambda-logo.png";
 import RedisLogo from "../images/logos/redis-logo.png";
+import NodeJSLogo from "../images/logos/node-logo.png";
+import JupyterLogo from "../images/logos/jupyter-logo.png";
 
 export const skills: SkillAvatarProps[] = [
   {
@@ -33,6 +35,10 @@ export const skills: SkillAvatarProps[] = [
   {
     skillName: "React",
     imageSrc: ReactLogo,
+  },
+  {
+    skillName: "NodeJS",
+    imageSrc: NodeJSLogo,
   },
   {
     skillName: "SQL & SSMS",
@@ -64,6 +70,10 @@ export const skills: SkillAvatarProps[] = [
     imageSrc: AzureBotServiceLogo,
   },
   {
+    skillName: "Jupyter",
+    imageSrc: JupyterLogo,
+  },
+  {
     skillName: "Cloud Firestore",
     imageSrc: FirestoreLogo,
   },
@@ -74,6 +84,10 @@ export const skills: SkillAvatarProps[] = [
   {
     skillName: "Redis",
     imageSrc: RedisLogo,
+  },
+  {
+    skillName: "React Native",
+    imageSrc: ReactLogo,
   },
   {
     skillName: "R",
