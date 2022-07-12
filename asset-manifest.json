@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio-Site/static/css/main.5707022a.chunk.css",
-    "main.js": "/Portfolio-Site/static/js/main.f50f6b0e.chunk.js",
-    "main.js.map": "/Portfolio-Site/static/js/main.f50f6b0e.chunk.js.map",
+    "main.js": "/Portfolio-Site/static/js/main.e4035710.chunk.js",
+    "main.js.map": "/Portfolio-Site/static/js/main.e4035710.chunk.js.map",
     "runtime-main.js": "/Portfolio-Site/static/js/runtime-main.d4f1d71c.js",
     "runtime-main.js.map": "/Portfolio-Site/static/js/runtime-main.d4f1d71c.js.map",
     "static/css/2.6cd54866.chunk.css": "/Portfolio-Site/static/css/2.6cd54866.chunk.css",
@@ -40,6 +40,8 @@
     "static/media/gravity-elution.eee64828.png": "/Portfolio-Site/static/media/gravity-elution.eee64828.png",
     "static/media/gravity-graphs.749b0b80.png": "/Portfolio-Site/static/media/gravity-graphs.749b0b80.png",
     "static/media/html-logo.33745ead.png": "/Portfolio-Site/static/media/html-logo.33745ead.png",
+    "static/media/jupyter-logo.3fcc360d.png": "/Portfolio-Site/static/media/jupyter-logo.3fcc360d.png",
+    "static/media/node-logo.e328955d.png": "/Portfolio-Site/static/media/node-logo.e328955d.png",
     "static/media/office-logo.1a02a5a1.png": "/Portfolio-Site/static/media/office-logo.1a02a5a1.png",
     "static/media/python-logo.f0c9d647.png": "/Portfolio-Site/static/media/python-logo.f0c9d647.png",
     "static/media/r-logo.e765abed.png": "/Portfolio-Site/static/media/r-logo.e765abed.png",
@@ -54,6 +56,6 @@
     "static/css/2.6cd54866.chunk.css",
     "static/js/2.3b92fa0e.chunk.js",
     "static/css/main.5707022a.chunk.css",
-    "static/js/main.f50f6b0e.chunk.js"
+    "static/js/main.e4035710.chunk.js"
   ]
 }
