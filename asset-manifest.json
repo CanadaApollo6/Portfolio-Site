@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio-Site/static/css/main.5707022a.chunk.css",
-    "main.js": "/Portfolio-Site/static/js/main.5360bd49.chunk.js",
-    "main.js.map": "/Portfolio-Site/static/js/main.5360bd49.chunk.js.map",
+    "main.js": "/Portfolio-Site/static/js/main.f50f6b0e.chunk.js",
+    "main.js.map": "/Portfolio-Site/static/js/main.f50f6b0e.chunk.js.map",
     "runtime-main.js": "/Portfolio-Site/static/js/runtime-main.d4f1d71c.js",
     "runtime-main.js.map": "/Portfolio-Site/static/js/runtime-main.d4f1d71c.js.map",
     "static/css/2.6cd54866.chunk.css": "/Portfolio-Site/static/css/2.6cd54866.chunk.css",
@@ -15,12 +15,14 @@
     "static/css/main.5707022a.chunk.css.map": "/Portfolio-Site/static/css/main.5707022a.chunk.css.map",
     "static/js/2.3b92fa0e.chunk.js.LICENSE.txt": "/Portfolio-Site/static/js/2.3b92fa0e.chunk.js.LICENSE.txt",
     "static/media/main.css": "/Portfolio-Site/static/media/Gotham-Black.c9e42599.otf",
+    "static/media/azure-logo.d795f594.png": "/Portfolio-Site/static/media/azure-logo.d795f594.png",
     "static/media/azurebotservice-logo.7b539748.png": "/Portfolio-Site/static/media/azurebotservice-logo.7b539748.png",
     "static/media/carlisle-logo.cad19d1a.png": "/Portfolio-Site/static/media/carlisle-logo.cad19d1a.png",
     "static/media/cbs-logo.9d014ef5.png": "/Portfolio-Site/static/media/cbs-logo.9d014ef5.png",
     "static/media/corebts-logo.29b69134.png": "/Portfolio-Site/static/media/corebts-logo.29b69134.png",
     "static/media/corebts-photo.9f94d180.png": "/Portfolio-Site/static/media/corebts-photo.9f94d180.png",
     "static/media/css-logo.486422b1.png": "/Portfolio-Site/static/media/css-logo.486422b1.png",
+    "static/media/dart-logo.17c375e7.png": "/Portfolio-Site/static/media/dart-logo.17c375e7.png",
     "static/media/davey-dashboard-2.bf20e16f.png": "/Portfolio-Site/static/media/davey-dashboard-2.bf20e16f.png",
     "static/media/davey-dashboard.b4c5719c.png": "/Portfolio-Site/static/media/davey-dashboard.b4c5719c.png",
     "static/media/davey-logo.54685c51.png": "/Portfolio-Site/static/media/davey-logo.54685c51.png",
@@ -31,6 +33,7 @@
     "static/media/davey-mobile-menu.82102411.png": "/Portfolio-Site/static/media/davey-mobile-menu.82102411.png",
     "static/media/davey-mobile-message-form.6260f3df.png": "/Portfolio-Site/static/media/davey-mobile-message-form.6260f3df.png",
     "static/media/davey-mobile-messages.062fcc8c.png": "/Portfolio-Site/static/media/davey-mobile-messages.062fcc8c.png",
+    "static/media/firestore-logo.00ebd1f6.png": "/Portfolio-Site/static/media/firestore-logo.00ebd1f6.png",
     "static/media/flutter-logo.fa32602c.png": "/Portfolio-Site/static/media/flutter-logo.fa32602c.png",
     "static/media/google-cloud-logo.e424c972.svg": "/Portfolio-Site/static/media/google-cloud-logo.e424c972.svg",
     "static/media/gravity-dashboard.199e990d.png": "/Portfolio-Site/static/media/gravity-dashboard.199e990d.png",
@@ -51,6 +54,6 @@
     "static/css/2.6cd54866.chunk.css",
     "static/js/2.3b92fa0e.chunk.js",
     "static/css/main.5707022a.chunk.css",
-    "static/js/main.5360bd49.chunk.js"
+    "static/js/main.f50f6b0e.chunk.js"
   ]
 }
