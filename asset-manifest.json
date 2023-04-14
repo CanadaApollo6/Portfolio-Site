@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Portfolio-Site/static/css/main.5707022a.chunk.css",
-    "main.js": "/Portfolio-Site/static/js/main.a974d0d1.chunk.js",
-    "main.js.map": "/Portfolio-Site/static/js/main.a974d0d1.chunk.js.map",
+    "main.js": "/Portfolio-Site/static/js/main.1f8ffa0f.chunk.js",
+    "main.js.map": "/Portfolio-Site/static/js/main.1f8ffa0f.chunk.js.map",
     "runtime-main.js": "/Portfolio-Site/static/js/runtime-main.d4f1d71c.js",
     "runtime-main.js.map": "/Portfolio-Site/static/js/runtime-main.d4f1d71c.js.map",
     "static/css/2.6cd54866.chunk.css": "/Portfolio-Site/static/css/2.6cd54866.chunk.css",
-    "static/js/2.3b92fa0e.chunk.js": "/Portfolio-Site/static/js/2.3b92fa0e.chunk.js",
-    "static/js/2.3b92fa0e.chunk.js.map": "/Portfolio-Site/static/js/2.3b92fa0e.chunk.js.map",
+    "static/js/2.d91ae105.chunk.js": "/Portfolio-Site/static/js/2.d91ae105.chunk.js",
+    "static/js/2.d91ae105.chunk.js.map": "/Portfolio-Site/static/js/2.d91ae105.chunk.js.map",
     "static/js/3.9a13b2d0.chunk.js": "/Portfolio-Site/static/js/3.9a13b2d0.chunk.js",
     "static/js/3.9a13b2d0.chunk.js.map": "/Portfolio-Site/static/js/3.9a13b2d0.chunk.js.map",
     "index.html": "/Portfolio-Site/index.html",
     "static/css/2.6cd54866.chunk.css.map": "/Portfolio-Site/static/css/2.6cd54866.chunk.css.map",
     "static/css/main.5707022a.chunk.css.map": "/Portfolio-Site/static/css/main.5707022a.chunk.css.map",
-    "static/js/2.3b92fa0e.chunk.js.LICENSE.txt": "/Portfolio-Site/static/js/2.3b92fa0e.chunk.js.LICENSE.txt",
+    "static/js/2.d91ae105.chunk.js.LICENSE.txt": "/Portfolio-Site/static/js/2.d91ae105.chunk.js.LICENSE.txt",
     "static/media/main.css": "/Portfolio-Site/static/media/Gotham-Black.c9e42599.otf",
     "static/media/azure-logo.d795f594.png": "/Portfolio-Site/static/media/azure-logo.d795f594.png",
     "static/media/azurebotservice-logo.7b539748.png": "/Portfolio-Site/static/media/azurebotservice-logo.7b539748.png",
@@ -21,6 +21,7 @@
     "static/media/cbs-logo.9d014ef5.png": "/Portfolio-Site/static/media/cbs-logo.9d014ef5.png",
     "static/media/corebts-logo.29b69134.png": "/Portfolio-Site/static/media/corebts-logo.29b69134.png",
     "static/media/corebts-photo.9f94d180.png": "/Portfolio-Site/static/media/corebts-photo.9f94d180.png",
+    "static/media/csharp-logo.fc430729.png": "/Portfolio-Site/static/media/csharp-logo.fc430729.png",
     "static/media/css-logo.486422b1.png": "/Portfolio-Site/static/media/css-logo.486422b1.png",
     "static/media/dart-logo.17c375e7.png": "/Portfolio-Site/static/media/dart-logo.17c375e7.png",
     "static/media/davey-dashboard-2.bf20e16f.png": "/Portfolio-Site/static/media/davey-dashboard-2.bf20e16f.png",
@@ -41,6 +42,7 @@
     "static/media/gravity-graphs.749b0b80.png": "/Portfolio-Site/static/media/gravity-graphs.749b0b80.png",
     "static/media/html-logo.33745ead.png": "/Portfolio-Site/static/media/html-logo.33745ead.png",
     "static/media/jupyter-logo.3fcc360d.png": "/Portfolio-Site/static/media/jupyter-logo.3fcc360d.png",
+    "static/media/net_core-logo.4889519c.png": "/Portfolio-Site/static/media/net_core-logo.4889519c.png",
     "static/media/node-logo.e328955d.png": "/Portfolio-Site/static/media/node-logo.e328955d.png",
     "static/media/office-logo.1a02a5a1.png": "/Portfolio-Site/static/media/office-logo.1a02a5a1.png",
     "static/media/python-logo.f0c9d647.png": "/Portfolio-Site/static/media/python-logo.f0c9d647.png",
@@ -54,8 +56,8 @@
   "entrypoints": [
     "static/js/runtime-main.d4f1d71c.js",
     "static/css/2.6cd54866.chunk.css",
-    "static/js/2.3b92fa0e.chunk.js",
+    "static/js/2.d91ae105.chunk.js",
     "static/css/main.5707022a.chunk.css",
-    "static/js/main.a974d0d1.chunk.js"
+    "static/js/main.1f8ffa0f.chunk.js"
   ]
 }
