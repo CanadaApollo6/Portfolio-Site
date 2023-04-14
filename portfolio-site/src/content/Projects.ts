@@ -29,7 +29,7 @@ export const projects: ProjectCardData[] = [
     role: "Full Stack Engineer",
     techUsed: "ReactJS, .NET Core/C#, SQL Server, Azure DevOps, Okta",
     description:
-      "Worked with [REDACTED], a Japanese client, as a Core BTS engineer. I helped complete development of the internal capital expenditures web app that the project was creating.",
+      "Worked with [REDACTED], a Japanese client, as a Core BTS engineer. I helped complete development of the internal capital expenditures web app that the project was creating. I focused on the front-end but worked on all areas of the app.",
     companyColor: coreBtsGradient,
     companyLogo: CoreBTSLogo,
   },
