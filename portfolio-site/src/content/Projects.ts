@@ -24,7 +24,30 @@ const coreBtsGradient: string =
 export const projects: ProjectCardData[] = [
   {
     companyName: "Core BTS Client",
-    startDate: "Fedbruary 2022",
+    startDate: "January 2023",
+    endDate: "May 2023",
+    role: "Full Stack Engineer",
+    techUsed: "ReactJS, .NET Core/C#, SQL Server, Azure DevOps, Okta",
+    description:
+      "Worked with [REDACTED], a Japanese client, as a Core BTS engineer. I helped complete development of the internal capital expenditures web app that the project was creating.",
+    companyColor: coreBtsGradient,
+    companyLogo: CoreBTSLogo,
+  },
+  {
+    companyName: "Core BTS Client",
+    startDate: "June 2022",
+    endDate: "December 2022",
+    role: "Full Stack Engineer",
+    techUsed:
+      "AureliaJS, Azure DevOps, C# in .NET Core & .NET Framework, SQL Server, Kubernetes",
+    description:
+      "Worked with [REDACTED], a construction hardware company, as a Core BTS engineer. I worked on a team which oversaw the development and maintenance of three internal applications.",
+    companyColor: coreBtsGradient,
+    companyLogo: CoreBTSLogo,
+  },
+  {
+    companyName: "Core BTS Client",
+    startDate: "February 2022",
     endDate: "June 2022",
     role: "Azure AI Engineer",
     techUsed:

@@ -18,16 +18,10 @@ import AwsLambdaLogo from "../images/logos/awslambda-logo.png";
 import RedisLogo from "../images/logos/redis-logo.png";
 import NodeJSLogo from "../images/logos/node-logo.png";
 import JupyterLogo from "../images/logos/jupyter-logo.png";
+import CSharpLogo from "../images/logos/csharp-logo.png";
+import NetCoreLogo from "../images/logos/net_core-logo.png";
 
 export const skills: SkillAvatarProps[] = [
-  {
-    skillName: "Python",
-    imageSrc: PythonLogo,
-  },
-  {
-    skillName: "TensorFlow 2.0+",
-    imageSrc: TensorFlowLogo,
-  },
   {
     skillName: "TypeScript",
     imageSrc: TypeScriptLogo,
@@ -39,6 +33,22 @@ export const skills: SkillAvatarProps[] = [
   {
     skillName: "NodeJS",
     imageSrc: NodeJSLogo,
+  },
+  {
+    skillName: "Python",
+    imageSrc: PythonLogo,
+  },
+  {
+    skillName: "TensorFlow 2.0+",
+    imageSrc: TensorFlowLogo,
+  },
+  {
+    skillName: "C#",
+    imageSrc: CSharpLogo,
+  },
+  {
+    skillName: ".NET Core",
+    imageSrc: NetCoreLogo,
   },
   {
     skillName: "SQL & SSMS",
